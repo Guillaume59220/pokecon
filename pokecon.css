@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+img{
+   width: 1000px; 
+}
+
+.image{
+    float: left;
+}
+
+.php{
+    float: left;
+}
