@@ -7,7 +7,7 @@
     <title>Pokécon</title>
 </head>
 <body>
-    
+   <h1>Pokécon</h1> 
 <?php
     
 ?>
