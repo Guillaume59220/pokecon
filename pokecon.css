@@ -17,6 +17,8 @@ img{
 }
 
 .php{
+    background-color: blue;
+    color: white;
     float: left;
     text-align: center;
 }
