@@ -41,6 +41,70 @@
    <div class="php">
    <?php
 
+// Pikachu
+
+$pikachu = [
+
+  'pv' => isset($_GET['pv_pikachu']) ? $_GET['pv_pikachu'] : 25, // 25 Points de vie par défaut
+
+  'attaque' => isset($_GET['attaque_pikachu']) ? $_GET['attaque_pikachu'] : 15,
+
+  'defense' => isset($_GET['defense_pikachu']) ? $_GET['defense_pikachu'] : 10
+
+];
+
+
+
+// Bulbizarre
+
+$bulbizarre = [
+
+  'pv' => isset($_GET['pv_bulbizarre']) ? $_GET['pv_bulbizarre'] : 30,
+
+  'attaque' => isset($_GET['attaque_bulbizarre']) ? $_GET['attaque_bulbizarre'] : 8,
+
+  'defense' => isset($_GET['defense_bulbizarre']) ? $_GET['defense_bulbizarre'] : 20
+
+];
+
+?>
+
+
+
+  <form>
+
+    <fieldset>
+
+      <legend>Pikachu</legend>
+
+      <div>Points de vie : <input type="test" name="pv_pikachu" value="<?php echo $pikachu['pv']; ?>"/></div>
+
+      <div>Points de défense : <input type="test" name="defense_pikachu" value="<?php echo $pikachu['defense']; ?>"/></div>
+
+      <div>Points d'attaque : <input type="test" name="attaque_pikachu" value="<?php echo $pikachu['attaque']; ?>"/></div>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Bulbizarre</legend>
+
+      <div>Points de vie : <input type="test" name="pv_bulbizarre" value="<?php echo $bulbizarre['pv']; ?>"/></div>
+
+      <div>Points de défense : <input type="test" name="defense_bulbizarre" value="<?php echo $bulbizarre['defense']; ?>"/></div>
+
+      <div>Points d'attaque : <input type="test" name="attaque_bulbizarre" value="<?php echo $bulbizarre['attaque']; ?>"/></div>
+
+    </fieldset>
+
+    <button type="submit">Combattez !</button>
+
+  </form>
+
+
+
+<?php
+
 /**
 
  * Bienvenue dans ce module PHP
@@ -51,37 +115,29 @@
 
 
 
-// Pikachu
+// Vérifions les informations
 
-$pikachu = [
+/*echo "<pre>";
 
-  'pv' => 25,
+var_dump($_GET);
 
-  'attaque' => 15,
+var_dump($_POST);
 
-  'defense' => 10
-
-];
+echo "</pre>";*/
 
 
 
-// Bulbizarre
 
-$bulbizarre = [
-
-  'pv' => 30,
-
-  'attaque' => 8,
-
-  'defense' => 20
-
-];
 
 
 
 $tour = 0;
 
-echo "Date : " . date('d/m/Y : H:i:s');
+
+
+//echo "Date : " . date('d/m/Y : H:i:s');
+
+
 
 // Boucle de combat
 
@@ -93,7 +149,7 @@ do {
 
   // pikachu attaque bulbizarre
 
-  echo "<p class=\"titre\">Pikachu attaque bulbizarre</p>";
+  echo "<h3>Pikachu attaque bulbizarre</h3>";
 
   if ($pikachu['attaque'] >= $bulbizarre['defense']) {
 
@@ -137,7 +193,7 @@ do {
 
   // bulbizarre attaque pikachu
 
-  echo "<p>Bulbizarre attaque Pikachu</p>";
+  echo "<h3>Bulbizarre attaque Pikachu</h3>";
 
   if ($bulbizarre['attaque'] >= $pikachu['defense']) {
 
