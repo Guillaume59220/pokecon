@@ -20,36 +20,39 @@
    <div class="php">
    <?php
 
-  $tour=0;
+  
 
 
-/**
+  /**
 
- * Bienvenue dans ce module PHP
+  * Bienvenue dans ce module PHP
 
- * Nous allons travailler à la réalisation d'un pokedex
+  * Nous allons travailler à la réalisation d'un pokedex
 
- */
-
-
-
-// Pikachu
-
-$attaque_pikachu = 15;
-
-$defense_pikachu = 10;
-
-$pv_pikachu = 25;
+  */
 
 
 
-// Bulbizarre
+  // Pikachu
 
-$attaque_bulbizarre = 8;
+  $attaque_pikachu = 15;
 
-$defense_bulbizarre = 20;
+  $defense_pikachu = 10;
 
-$pv_bulbizarre = 30;
+  $pv_pikachu = 25;
+
+
+
+  // Bulbizarre
+
+  $attaque_bulbizarre = 8;
+
+  $defense_bulbizarre = 20;
+
+  $pv_bulbizarre = 30;
+
+
+$tour=0;
 
 do{
 
