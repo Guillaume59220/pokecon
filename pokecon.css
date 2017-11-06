@@ -3,7 +3,7 @@ body{
 }
 
 audio{
-    display: stop;
+    display: none;
 }
 
 h1{
