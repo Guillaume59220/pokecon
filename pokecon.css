@@ -2,6 +2,10 @@ body{
     background-color: greenyellow;
 }
 
+audio{
+    display: bottom;
+}
+
 h1{
     text-align: center;
 }

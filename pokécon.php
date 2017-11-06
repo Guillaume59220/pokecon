@@ -14,8 +14,12 @@
 <h2>Le pokédex de la mort qui tue</h2>
 </div>
 
-   <audio src="1.mp3"></audio>
-   
+   <audio controls autoplay>
+    <source src="1.mp3" type="audio/ogg">
+    <source src="1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
 <div class="taille">
 		<div class="container">
 			<div class="slider">
