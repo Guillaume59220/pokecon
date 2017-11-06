@@ -20,6 +20,9 @@
    <div class="php">
    <?php
 
+  $tour=0;
+
+
 /**
 
  * Bienvenue dans ce module PHP
@@ -48,7 +51,9 @@ $defense_bulbizarre = 20;
 
 $pv_bulbizarre = 30;
 
+do{
 
+  echo "<h2> tour :" .++$tour . "à" .date('H:i:s')."</h2>";
 
 // pikachu attaque bulbizarre
 
@@ -147,6 +152,10 @@ $pv_baie_noire = 30;
 // Bulbizarre mange une baie rouge
 
 // Pikachu mange une baie noire
+
+
+  
+}while ($pv_pikachu['pv'] > 0 && $pv_bulbizarre['pv']  > 0);
 
 ?>
    </div>
