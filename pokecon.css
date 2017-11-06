@@ -1,24 +1,91 @@
+body{
+    background-color: greenyellow;
+}
+
 h1{
     text-align: center;
 }
 
-h2{
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 100px;
-}
-
-img{
-   width: 1000px; 
-}
-
-.image{
+.image img{
+    position: relative;
     float: left;
+    width: 1000px;
+    z-index: 0;
 }
 
 .php{
     background-color: blue;
     color: white;
+    width: 45%;
     float: left;
     text-align: center;
+}
+
+
+
+/*taille image whidt 400px de largeur et height 200px en hauteur de force*/
+/*slider = taile d'une image * le nombre d'image */
+/*images doivent etres cotes à cotes*/
+/*container doit faire la taille d'une imagin*/
+/*masquage d'image voir la propriété overflow...*/
+/*deplacement de slider avc position: absolute; et left*/
+
+.taille{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 20px;
+
+}
+
+.slider{
+    position: absolute;
+	width: 2000px;
+	display: flex;
+	position: absolute;
+	left: -0.1px;
+	animation-name: slider;
+	animation-duration: 30s;
+}
+
+.slider img{
+	width:400px;
+	height:200px;
+}
+
+.container{
+	position: relative;
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+} 
+
+@keyframes slider{
+
+	30% {
+		left: -400px;
+	}
+
+	40% {
+		left: -800px;
+	}
+
+	50% {
+		left: -1200px;
+	}
+
+	60% {
+		left: -1605px;
+	}
+
+	70% {
+		left: -1200px;
+	}
+
+	80% {
+		left: -800px;
+	}
+
+	90% {
+		left: -400px;
+	}
 }
