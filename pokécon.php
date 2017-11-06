@@ -53,7 +53,9 @@ $pv_bulbizarre = 30;
 
 do{
 
-  echo "<h2> tour :" .++$tour . "à" .date('H:i:s')."</h2>";
+  echo "Date : " , date('d/m/y : H:i:s');
+
+  echo "<h2> tour :" .++$tour . "</h2>";
 
 // pikachu attaque bulbizarre
 
