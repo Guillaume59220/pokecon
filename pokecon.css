@@ -3,7 +3,7 @@ body{
 }
 
 audio{
-    display: none;
+    display: stop;
 }
 
 h1{
@@ -48,7 +48,7 @@ h1{
 	position: absolute;
 	left: -0.1px;
 	animation-name: slider;
-	animation-duration: 30s;
+	animation-duration: 50s;
 }
 
 .slider img{

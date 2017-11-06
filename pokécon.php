@@ -41,6 +41,28 @@
    <div class="php">
    <?php
 
+  // tableau de validation
+
+$form_error = [];
+
+
+
+// Validation du formulaire
+
+foreach($_GET as $input => $value) {
+
+  if (empty($value) || !ctype_digit($value) || $value <= 0) {
+
+    echo '<p style="">Le champ ' . $input . ' doit un entier strictement supérieur à 0</p>';
+
+    $form_error[$input] = 1;
+
+  }
+
+}
+
+   
+
 // Pikachu
 
 $pikachu = [
