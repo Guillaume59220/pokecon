@@ -13,6 +13,8 @@
 <div class="h2">
 <h2>Le pokédex de la mort qui tue</h2>
 </div>
+
+   <audio src="1.mp3"></audio>
    
 <div class="taille">
 		<div class="container">
