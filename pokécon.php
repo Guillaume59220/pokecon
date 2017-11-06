@@ -14,7 +14,6 @@
 <h2>Le pokédex de la mort qui tue</h2>
 </div>
    
-
 <div class="taille">
 		<div class="container">
 			<div class="slider">
